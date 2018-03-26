@@ -79,6 +79,6 @@ test_index = int(input("Enter the test Point \n"))
 test_label = test_labels[test_index]
 
 # Getting train label which NN will guess for our test point by calling below method
-train_label = NN_classifier(test_data[100])
+train_label = NN_classifier(test_data[test_index])
 
 checkForSuccessFailureCase(train_label, test_label, test_index)
